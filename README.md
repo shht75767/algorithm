@@ -1,1 +1,1 @@
-# algorithm
+# 매일 조금씩! algorithm 공부
