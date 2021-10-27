@@ -1,1 +1,1 @@
-# 매일 매일 백준 algorithm !
+# 매일 조금씩! algorithm 공부
