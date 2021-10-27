@@ -1,1 +1,1 @@
-# algorithm
+# 매일 매일 백준 algorithm !
