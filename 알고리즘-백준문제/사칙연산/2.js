@@ -6,3 +6,9 @@ const print = (arg) => {
   console.log(arg);
 };
 print('강한친구 대한육군');
+
+function print(arg) {
+  console.log(arg);
+  console.log(arg);
+}
+print('강한친구 대한육군');
