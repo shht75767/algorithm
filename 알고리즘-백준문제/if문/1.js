@@ -10,3 +10,5 @@ if (a > b) {
 } else {
   console.log('==');
 }
+
+//const a = +input[0];에서의 +는 숫자로 바꿔주는 parseInt()와 같음
