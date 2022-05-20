@@ -2,8 +2,6 @@ let input = require('fs').readFileSync('./5.text').toString().split();
 
 let answer = '';
 
-for (let i = Number(input[0]); i >= 1; i--) {
-  answer += i + '\n';
+for (let i = input; i >= 1; i--) {
+  console.log(i);
 }
-
-console.log(answer);
