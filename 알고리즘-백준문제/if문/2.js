@@ -13,3 +13,8 @@ if (a <= 100 && a >= 90) {
 } else {
   console.log('F');
 }
+
+
+
+
+
