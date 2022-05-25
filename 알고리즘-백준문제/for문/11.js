@@ -1,22 +1,17 @@
-let fs = require('fs');
-let input = fs.readFileSync('/dev/stdin').toString().split('\n');
+let input = require('fs').readFileSync('11.text').toString().split('\r\n');
+let input1 = input[0].split(' ');
+let input2 = input[1].split(' ');
 
-let inputs = [];
-inputs = input[0].split(' ');
-// console.log(inputs);  //--> [ '10', '5' ]
+let total = parseInt(input1[0]);
+let limit = parseInt(input1[1]);
 
-let total = Number(inputs[0]);
-let limit = Number(inputs[1]);
+let answer = '';
 
-let numbers = [];
-numbers = input[1].split(' ');
-// console.log(numbers);  //-->  [ '1', '10', '4', '9', '2', '3', '8', '5', '7', '6' ]
-
-result = '';
 for (let i = 0; i < total; i++) {
-  if (Number(numbers[i]) < limit) {
-    result += numbers[i] + ' ';
+  let a = parseInt(input2[i]);
+  if (limit > a) {
+    answer += a + ' ';
   }
 }
 
-console.log(result);
+console.log(answer);

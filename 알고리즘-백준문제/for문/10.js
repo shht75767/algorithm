@@ -1,26 +1,24 @@
 const input = require('fs').readFileSync('./9.text').toString();
-let num = Number(input);
+let num = parseInt(input);
 
-let result = '';
+/*for (let i = 0; i < num; i++) {
+  let result = '';
+  for (let j = 0; j < num - 1 - i; j++) {
+    result += ' ';
+  }
+  for (let k = 0; k < i + 1; k++) {
+    result += '*';
+  }
+  console.log(result);
+}*/
 
 for (let i = 0; i < num; i++) {
-  result += '.';
+  let result = '';
+  for (let j = 0; j < num - 1 - i; j++) {
+    result += ' ';
+  }
+  for (let k = 0; k < i + 1; k++) {
+    result += '*';
+  }
   console.log(result);
 }
-
-/* 
-   // 별
-    for (let line = 1; line <= N; ++line) {
-        const starCnt = line;
-        const spaceCnt = N - line;
-        let printString = '';
-        for (let i = 0; i < spaceCnt; ++i) {
-            printString += ' ';
-        }
-        for (let i = 0; i < starCnt; ++i) {
-            printString += '*';
-        }
-        console.log(printString);
-    }
-}
-*/
