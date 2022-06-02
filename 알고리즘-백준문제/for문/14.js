@@ -1,11 +1,13 @@
-let input = require('fs').readFileSync('14.text').toString().split('');
-let a = parseInt(input[0]);
-let b = parseInt(input[1]);
-let c = [];
-let answer = '';
-let i = 1;
-while (i < 10) {
-  c = a + b;
-  console.log(c);
+let input = require('fs').readFileSync('14.text').toString();
+let num = input;
+let sum;
+let i = 0;
+while (true) {
   i++;
+  sum = Math.floor(num / 10) + (num % 10);
+  num = (num % 10) * 10 + (sum % 10);
+  if (num == input) {
+    break;
+  }
 }
+console.log(i);
