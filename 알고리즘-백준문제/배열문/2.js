@@ -1,9 +1,15 @@
 let input = require('fs').readFileSync('./2.text').toString().split('\r\n');
 
-let max = input.sort(num);
+let num = input.map((x) => parseInt(x));
 
-function num(a, b) {
-  return b - a;
+let max = num[0];
+let maxIdx = 0;
+for (let i = 1; i < num.length; i++) {
+  if (max < num[i]) {
+    max = num[i];
+    maxIdx = i;
+  }
 }
 
-console.log(input);
+console.log(max);
+console.log(maxIdx + 1);
